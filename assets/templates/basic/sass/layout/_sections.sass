@@ -1,0 +1,593 @@
+/* recharge-form-section css start */  
+.recharge-bill-area 
+  padding: 30px 
+  background-color: $base-color-two
+  +border-radius(8px)
+  margin-top: -60px
+  position: relative
+  z-index: 2
+  &::before 
+    position: absolute
+    content: '' 
+    top: 0
+    left: 0
+    width: 100% 
+    height: 100% 
+    background-color: $base-color-two 
+    opacity: 0.45
+    z-index: -1
+    +border-radius(8px)
+.bill-items-wrapper
+  ul.morebtn
+    width: 110px
+    li
+      width: 110px
+      +border-radius(50%)
+      display: -webkit-box
+      display: -ms-flexbox
+      display: flex
+      position: relative
+      .mbtn
+        width: 60px 
+        height: 60px
+        +border-radius(50%) 
+        text-align: center
+        cursor: pointer
+        background: #ffffff
+        color: $heading-color
+        padding: 15px 15px
+        outline: none
+        border: none
+        display: flex
+        flex-wrap: wrap
+        align-content: center
+        position: relative
+        &::after 
+          position: absolute
+          content: '' 
+          top: -5px 
+          left: -5px 
+          width: calc(100% + 10px)
+          height: calc(100% + 10px)
+          background-color: rgba(#ffffff, 0.15)
+          +border-radius(50%)
+        i,span 
+          width: 100%
+        span 
+          margin-top: 5px
+          font-size: 12px
+        &:hover, &:focus
+          border: none !important
+          outline: none !important
+      &:hover .dropdown-menu 
+        +d-flex 
+      .dropdown-menu 
+        margin: 0
+        padding: 0
+        left: auto
+        right: 0
+        width: 310px
+        padding: 15px
+        justify-content: center
+        display: none
+        border: none 
+        box-shadow: 0 15px 35px rgba(#000000, 0.15)
+        @media (max-width: 430px)
+          width: 250px
+        .nav-item 
+          width: 90px 
+          text-align: center
+          position: relative
+          padding-bottom: 10px
+          &::after 
+            position: absolute
+            content: '' 
+            bottom: 0 
+            left: 0 
+            width: 100% 
+            height: 3px 
+            background-color: $base-color 
+            opacity: 0 
+          &:hover 
+            .nav-link 
+              i 
+                background-color: $base-color
+                color: #ffffff
+          &.active 
+            &::after 
+              opacity: 1
+            .nav-link 
+              i 
+                background-color: $base-color 
+                color: #ffffff
+          .nav-link 
+            border: none 
+            padding: 0 15px
+          i 
+            width: 55px 
+            height: 55px 
+            color: $heading-color 
+            background-color: #f1f1f1 
+            display: inline-flex 
+            justify-content: center
+            align-items: center
+            +border-radius(50%)
+            +transition(all 0.3s)
+          span 
+            color: rgba(#000000, 0.8)
+            font-size: 14px 
+            width: 100%
+            margin-top: 5px
+  .bill-items
+    position: relative
+    max-width: calc(100% - 111px)
+    float: left
+    padding: 0 
+    border: none
+    background-color: transparent 
+    .nav-item 
+      width: 110px 
+      text-align: center
+      position: relative
+      padding-bottom: 10px
+      &::after 
+        position: absolute
+        content: '' 
+        bottom: 0 
+        left: 0 
+        width: 100% 
+        height: 3px 
+        background-color: $base-color 
+        opacity: 0 
+      &:hover 
+        .nav-link 
+          i 
+            background-color: $base-color
+            color: #ffffff
+      &.active 
+        &::after 
+          opacity: 1
+        .nav-link 
+          i 
+            background-color: $base-color 
+            color: #ffffff
+      .nav-link 
+        border: none 
+        padding: 0 15px
+      i 
+        width: 55px 
+        height: 55px 
+        color: $heading-color 
+        background-color: #f1f1f1 
+        display: inline-flex 
+        justify-content: center
+        align-items: center
+        +border-radius(50%)
+        +transition(all 0.3s)
+      span 
+        color: rgba(#ffffff, 0.8)
+        font-size: 14px 
+        width: 100%
+        margin-top: 10px
+.bill-form-wrapper 
+  padding: 30px 
+  background-color: #ffffff
+  +border-radius(8px)
+/* recharge-form-section css end */
+
+
+/* service section css start */
+.service-card
+  padding: 30px 
+  background-color: #ffffff
+  box-shadow: 0 25px 70px rgba(0,0,0,.07)
+  +border-radius(8px)
+  +transition(all 0.3s)
+  &:hover 
+    background-color: $base-color
+    +transform(translateY(-5px))
+    box-shadow: 0 25px 70px rgba($base-color,.5)
+    .service-card__icon 
+      i 
+        color: #ffffff
+    .service-card__content
+      .title, p 
+        color: #ffffff
+  &__icon 
+    width: 60px 
+    i 
+      font-size: 54px
+      color: $base-color
+      +transition(all 0.3s)
+  &__content 
+    width: calc(100% - 60px)
+    padding-left: 15px
+    @media (max-width: 991px)
+      width: 100%
+      padding-left: 0 
+      margin-top: 30px
+    .title, p 
+      +transition(all 0.3s)
+/* service section css end */
+
+
+/* features section css start */
+.feature-thumb 
+  float: right
+  width: 150%
+  @media (max-width: 1500px)
+    width: 120%
+  @media (max-width: 1300px)
+    width: 100%
+  img 
+    width: 100% 
+.feature-card 
+  height: 100%
+  @media (max-width: 767px) 
+    padding: 30px 
+    background-color: #ffffff
+    box-shadow: 0 10px 30px rgba(0,0,0,.12)
+    +border-radius(8px)
+    justify-content: center
+  &:hover 
+    .feature-card__icon 
+      animation: zoomIn 0.5s 
+      background-color: $base-color 
+      box-shadow: 0 15px 35px rgba($base-color, 0.45)
+      i 
+        color: #ffffff
+  &__icon 
+    width: 75px 
+    height: 75px 
+    display: flex 
+    align-items: center
+    justify-content: center
+    background-color: #ffffff
+    box-shadow: 0 10px 30px rgba(0,0,0,.12)
+    +transition(all 0.3s)
+    +border-radius(50%)
+    i 
+      font-size: 36px 
+      color: $base-color
+      +transition(all 0.3s)
+  &__content 
+    width: calc(100% - 75px)
+    padding-left: 20px
+    .title 
+      margin-bottom: 15px
+    @media (max-width: 767px)
+      width: 100% 
+      padding-left: 0 
+      margin-top: 30px
+      text-align: center
+/* features section css end */
+
+
+/* offer section css start */
+.offer-wrapper 
+  padding: 50px 
+  background-color: #ffffff
+  +border-radius(10px)
+  @media (max-width: 575px)
+    padding: 30px
+.ad-card 
+  +border-radius(5px)
+  overflow: hidden
+  +transition(all 0.3s)
+  &:hover 
+    box-shadow: 0 5px 35px rgba($base-color,.5)
+  img 
+    width: 100% 
+/* offer section css end */
+
+
+/* overview section css start */
+.overview-section 
+  padding: 100px 0
+  position: relative
+  z-index: 1
+  &::before 
+    position: absolute
+    content: ''
+    top: 0 
+    left: 0
+    width: 100% 
+    height: 100% 
+    background-color: $base-color-two
+    opacity: 0.45
+    z-index: -1
+.overview-content 
+  .title 
+    font-size: 34px
+.overview-item 
+  border: 1px solid rgba($base-color, 0.45)
+.overview-card 
+  +d-flex 
+  padding: 30px 15px
+  align-items: center
+  justify-content: center
+  @media (max-width: 575px) 
+    padding: 20px 0
+  &__icon 
+    // width: 50px 
+    i 
+      font-size: 48px 
+      color: $base-color 
+      @media (max-width: 575px) 
+        font-size: 36px
+  &__content 
+    // width: calc(100% - 50px)
+    padding-left: 25px
+    @media (max-width: 575px)
+      padding-left: 15px
+    .counter-amount 
+      color: #ffffff
+      font-family: $heading-font 
+      font-size: 32px 
+      font-weight: 700 
+      line-height: 1
+      @media (max-width: 575px)
+        font-size: 24px
+    .caption 
+      color: #ffffff
+      margin-top: 5px
+      @media (max-width: 575px) 
+        font-size: 12px
+/* overview section css end */
+
+/* app section css start */
+.app-content 
+  padding-bottom: 100px
+  @media (max-width: 1199px)
+    padding-bottom: 50px
+  @media (max-width: 767px)
+    padding-bottom: 90px
+  .title 
+    font-size: 48px 
+    @media (max-width: 991px)
+      font-size: 36px
+.app-btn-group 
+  margin: -5px -10px 
+  .app-btn 
+    margin: 5px 10px 
+/* app section css end */
+
+/* partner section css start */
+.partner-item 
+  padding: 15px 
+  text-align: center
+  background-color: #ffffff
+  border: 1px solid $border-color
+  height: 100px
+  display: flex
+  justify-content: center
+  align-items: center
+  +border-radius(5px)
+  +transition(all 0.3s)
+  &:hover 
+    box-shadow: 0 10px 35px rgba($base-color, 0.1)
+    +transform(translateY(-5px))
+/* partner section css end */
+
+
+/* client section css start */
+.client-item 
+  height: 80px 
+  display: flex 
+  justify-content: center
+  align-items: center
+  img 
+    display: inline-block
+    height: 70px
+.client-slider 
+  .slick-arrow 
+    position: absolute
+    top: 0
+    height: 100%
+    width: 40px
+    background-color: #f1f1f1
+    display: flex 
+    justify-content: center
+    align-items: center
+    z-index: 1
+    cursor: pointer
+    font-size: 24px
+    &:hover 
+      background-color: $base-color 
+      color: #ffffff
+    &.prev
+      left: -40px 
+      @media (max-width: 1500px)
+        left: 0
+    &.next 
+      right: -40px
+      @media (max-width: 1500px)
+        right: 0
+/* client section css end */
+
+
+/* account-area css start */
+.account-area 
+  position: relative
+  min-height: 100vh
+  z-index: 2
+  @media (max-width: 991px)
+    padding: 50px
+  @media (max-width: 480px)
+    padding: 30px
+  @media (max-width: 380px)
+    padding: 15px
+  .account-area-bg 
+    position: absolute
+    top: 0
+    left: 650px
+    width: calc(100% - 650px)
+    height: 100%
+    z-index: 1
+    @media (max-width: 991px)
+      width: 100%
+      left: 0
+.account-wrapper 
+  padding: 80px 100px
+  max-width: 100%
+  width: 650px
+  min-height: 100vh 
+  display: flex 
+  flex-wrap: wrap
+  align-content: space-between
+  position: relative
+  background-color: #ffffff
+  z-index: 3
+  @media (max-width: 991px) 
+    margin: 0 auto 
+    +border-radius(8px)
+  @media (max-width: 767px) 
+    padding: 80px 50px
+  @media (max-width: 575px) 
+    padding: 50px 30px
+  .account-logo 
+    margin-bottom: 100px
+    width: 100%
+    @media (max-width: 991px)
+      margin-bottom: 50px
+.account-form 
+  width: 100%
+  .form-control 
+    background-color: #f4f5f8
+    height: 65px
+    font-size: 16px
+    border: none
+    +border-radius(8px)
+.account-footer 
+  width: 100%
+  margin-top: 100px
+  @media (max-width: 991px)
+    margin-top: 50px
+/* account-area css end */
+
+
+/* contact css start */
+.contact-title 
+  font-size: 36px
+  @media (max-width: 575px)
+    font-size: 32px
+.contact-card 
+  @media (max-width: 991px)
+    padding: 30px 
+    background-color: #ffffff
+    box-shadow: 0 5px 10px rgba(#000000, 0.1)
+    +border-radius(8px)
+  &:hover 
+    .contact-card__header 
+      border-bottom-color: $base-color
+  &__header 
+    padding-bottom: 10px 
+    border-bottom: 2px solid #e5e5e5
+    +transition(all 0.3s)
+    i 
+      font-size: 32px 
+      margin-right: 20px
+      color: $base-color
+    .title 
+      color: rgba(#000000, 0.65)
+  &__content 
+    margin-top: 20px
+.contact-wrapper 
+  padding: 50px 80px
+  background-color: #ffffff
+  box-shadow: 0 10px 25px rgba(#000000, 0.1)
+  +border-radius(8px)
+  @media (max-width: 575px)
+    padding: 30px
+  .title 
+    font-size: 32px
+/* contact css end */
+
+
+/* dashboard css start */
+.d-widget 
+  padding: 30px 
+  background-color: #ffffff
+  overflow: hidden
+  position: relative
+  box-shadow: 0 10px 25px rgba(#000000, 0.05)
+  +transition(all 0.3s)
+  @media (max-width: 420px) 
+    justify-content: center
+  &:hover 
+    box-shadow: 0 15px 35px rgba(#000000, 0.1)
+    +transform(translateY(-5px))
+  &::before 
+    position: absolute
+    content: '' 
+    bottom: -9px
+    left: -26px
+    width: 60px
+    height: 30px
+    background-color: $base-color 
+    +transform(rotate(45deg))
+  &__content 
+    width: calc(100% - 75px)
+    padding-right: 20px
+    @media (max-width: 420px)
+      width: 100% 
+      padding-right: 0
+      order: 2
+      text-align: center
+      margin-top: 25px
+    .d-number 
+      font-size: 34px 
+      font-weight: 700 
+    .caption 
+      margin-top: 5px
+  &__icon 
+    width: 75px 
+    height: 75px 
+    background-color: $base-color 
+    color: #ffffff
+    display: flex 
+    justify-content: center
+    align-items: center 
+    position: relative
+    @media (max-width: 420px) 
+      order: 1
+      text-align: center
+    &::after  
+      position: absolute
+      content: '' 
+      top: -5px
+      left: -5px
+      width: calc(100% + 10px)
+      height: calc(100% + 10px)
+      background-color: transparent 
+      border: 3px solid $base-color 
+      +border-radius(50%)
+    i 
+      font-size: 42px
+    i + a 
+      display: none
+  &__btn 
+    background-color: $base-color 
+    color: #ffffff
+    padding: 2px 10px
+    font-size: 12px
+    +border-radius(3px)
+    &:hover 
+      color: #ffffff
+  &.style--two 
+    align-items: flex-start !important
+    .d-widget__icon 
+      text-align: right
+      height: auto 
+      background-color: transparent 
+      display: block
+      @media (max-width: 420px) 
+        text-align: center
+      &::after 
+        display: none
+      i 
+        color: $base-color
+        width: 100%
+      i + a 
+        display: inline-block
+/* dashboard css end */

@@ -1,0 +1,134 @@
+/* form css start */
+.form-group 
+  margin-bottom: 25px
+.form-control
+  padding: 10px 20px
+  border: 1px solid $border-color
+  width: 100%
+  background-color: #ffffff
+  +placeholder(rgba(#000000, 0.45))
+  +border-radius(3px)
+  color: $heading-color
+  min-height: 50px
+  &:focus 
+    border-color: $base-color
+    box-shadow: 0 0 5px rgba($base-color, 0.35)
+.select 
+  padding: 10px 20px
+  width: 100%
+  border: 1px solid $border-color
+  cursor: pointer
+  color: $para-color
+  background-color: #ffffff 
+  height: 50px
+  +border-radius(4px)
+  option 
+    padding: 10px 0
+    display: block
+    border-top: 1px solid #e5e5e5
+  &.style--two
+    background-color: transparent 
+    border: 1px solid rgba(#ffffff, 0.15)
+    font-size: 13px
+    padding: 5px 10px
+    height: auto
+  &.style--white 
+    color: #ffffff
+    option 
+      color: #000000
+textarea 
+  min-height: 150px !important
+  resize: none
+  width: 100%
+label 
+  color: #777777
+  margin-bottom: 10px
+  font-family: $heading-font 
+  font-size: 14px
+  font-weight: 600 
+.custom-checkbox 
+  display: flex 
+  align-items: center
+  input 
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+  label 
+    position: relative;
+    cursor: pointer;
+    font-size: 14px
+    margin-bottom: 0
+    font-weight: 400 
+    &::before 
+      content: '';
+      -webkit-appearance: none;
+      background-color: transparent;
+      border: 1px solid #7f7373;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+      padding: 6px;
+      display: inline-block;
+      position: relative;
+      vertical-align: middle;
+      cursor: pointer;
+      margin-right: 8px;
+.custom-checkbox input:checked + label::after 
+  content: '';
+  display: block;
+  position: absolute;
+  top: 7px;
+  left: 5px;
+  width: 5px;
+  height: 8px;
+  border: solid #0079bf;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+.custom-radio-box 
+  padding: 10px 25px 
+  border: 1px solid $border-color 
+  +border-radius(3px)
+  background-color: #ffffff
+.custom-radio 
+  position: relative
+  input[type=radio] 
+    width: 100% 
+    position: absolute
+    top: 0 
+    left: 0 
+    visibility: hidden
+    cursor: pointer
+    &:checked 
+      ~ label
+        &::before 
+          border-width: 2px
+          border-color: $base-color 
+        &::after 
+          opacity: 1
+  label 
+    margin-bottom: 0 
+    position: relative
+    padding-left: 20px 
+    &::before 
+      position: absolute
+      content: '' 
+      top: 3px
+      left: 0 
+      width: 15px 
+      height: 15px 
+      border: 1px solid #888888
+      +border-radius(50%)
+      +transition(all 0.3s)
+    &::after   
+      position: absolute
+      content: '' 
+      top: 7px
+      left: 4px
+      width: 7px
+      height: 7px
+      background-color: $base-color
+      +border-radius(50%)
+      opacity: 0 
+      +transition(all 0.3s)
+/* form css end*/

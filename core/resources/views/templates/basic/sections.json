@@ -1,0 +1,188 @@
+{
+    "banner": {
+        "builder": true,
+        "no_selection": true,
+        "name": "Banner Section",
+        "content": {
+            "images":{
+                "image":{
+                    "size":"1920x1080"
+                }
+            },
+            "heading": "text",
+            "sub_heading": "text"
+        }
+    },
+    "service": {
+        "builder": true,
+        "name": "Service Section",
+
+        "content":{
+            "heading":"text",
+            "sub_heading":"text"
+        },
+
+        "element": {
+            "heading": "text",
+            "text": "textarea",
+            "icon": "icon",
+            "modal": true
+        }
+    },
+    "apps": {
+        "builder": true,
+        "name": "Apps Section",
+        "content": {
+
+             "images":{
+                "image":{
+                    "size":"768x1170"
+                }
+            },
+
+            "heading":"text",
+            "sub_heading":"text",
+            "app_link":"text"
+
+        }
+    },
+    "feature": {
+        "builder": true,
+        "name": "Feature Section",
+        "content":{
+            "images":{
+                "image":{
+                    "size":"1230x1060"
+                }
+            },
+            "heading":"text",
+            "sub_heading":"text"
+        },
+        "element": {
+            "icon": "icon",
+            "heading": "text",
+            "text": "text",
+            "modal": true
+        }
+    },
+    "partner": {
+        "builder": true,
+        "name": "Partner Section",
+        "content": {
+            "heading": "text",
+            "sub_heading": "text"
+        },
+        "element": {
+            "modal": true,
+            "images":{
+                "image":{
+                    "size":"228x128"
+                }
+            }
+
+        }
+    },
+    "social_icon": {
+        "builder": true,
+        "no_selection": true,
+        "name": "Social Icons",
+        "element": {
+            "url": "text",
+            "social_icon": "icon",
+            "modal": true
+        }
+    },
+    "contact_us": {
+        "builder": true,
+        "no_selection": true,
+        "name": "Contact Us",
+        "content": {
+            "heading":"text",
+            "location":"text",
+            "email":"text"
+        }
+    },
+    "footer": {
+        "builder": true,
+        "no_selection": true,
+        "name": "Footer Section",
+        "content": {
+            "images":{
+                "image":{
+                    "size":"1920x1080"
+                }
+            },
+            "text": "text"
+        }
+    },
+    "pages": {
+        "builder": true,
+        "no_selection": true,
+        "name": "Page Section",
+        "element": {
+            "name": "text",
+            "description": "textarea-nic",
+            "modal":false
+        }
+    },
+    "breadcrumb": {
+    "builder": true,
+    "no_selection": true,
+    "name": "Breadcrumb Image",
+        "content": {
+            "images":{
+                "image":{
+                    "size":"1920x1080"
+                }
+            }
+        }
+    },
+    "auth_image": {
+    "builder": true,
+    "no_selection": true,
+    "name": "Auth Page Image",
+        "content": {
+            "images":{
+                "image":{
+                    "size":"1920x1080"
+                }
+            }
+        }
+    },
+    "overview": {
+        "builder": true,
+        "name": "Overview Section",
+        "content": {
+            "images":{
+                "image":{
+                    "size":"1920x1080"
+                }
+            },
+            "heading": "text",
+            "sub_heading": "text"
+        },
+        "element":{
+            "heading":"text",
+            "text":"text",
+            "icon":"icon",
+            "modal":true
+        }
+    },
+    "payment": {
+        "builder": true,
+        "name": "Payment Section",
+        "content": {
+            "heading": "text",
+            "sub_heading": "text"
+        }
+    },
+    "heading_info": {
+        "builder": true,
+        "no_selection": true,
+        "name": "Heading Info",
+        "content": {
+            "phone": "text",
+            "email": "text"
+        }
+    }
+}
